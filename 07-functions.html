@@ -48,43 +48,43 @@
                             return computerMove;
             }
             function PlayGame(userMove){
-        let computerMove = pickComputerMove();  
-                let result = '';
-                if(userMove === 'Scissors'){
-                       if(computerMove === 'rock'){
-                            result = 'You lost!';
-                        }
-                        else if(computerMove === 'paper'){
-                                result = 'You won!';
-                        }
-                        else{
-                            result = 'You tied!';
-                        }
-                }
-                else if(userMove === 'Paper'){
-                    if(computerMove === 'rock'){
-                            result = 'You won!';
-                        }
-                        else if(computerMove === 'paper'){
-                                result = 'You tied!';
-                        }
-                        else{
-                            result = 'You lost!';
-                        }
-                }
-                else{
-                    if(computerMove === 'rock'){
-                            result = 'You tied!';
-                        }
-                        else if(computerMove === 'paper'){
+            let computerMove = pickComputerMove();  
+                    let result = '';
+                    if(userMove === 'Scissors'){
+                        if(computerMove === 'rock'){
                                 result = 'You lost!';
-                        }
-                        else{
-                            result = 'You won!';
-                        }
-                }
-             
-                alert(`You picked ${userMove}. Computer picked ${computerMove}.  ${result}`);
+                            }
+                            else if(computerMove === 'paper'){
+                                    result = 'You won!';
+                            }
+                            else{
+                                result = 'You tied!';
+                            }
+                    }
+                    else if(userMove === 'Paper'){
+                        if(computerMove === 'rock'){
+                                result = 'You won!';
+                            }
+                            else if(computerMove === 'paper'){
+                                    result = 'You tied!';
+                            }
+                            else{
+                                result = 'You lost!';
+                            }
+                    }
+                    else{
+                        if(computerMove === 'rock'){
+                                result = 'You tied!';
+                            }
+                            else if(computerMove === 'paper'){
+                                    result = 'You lost!';
+                            }
+                            else{
+                                result = 'You won!';
+                            }
+                    }
+                
+                    alert(`You picked ${userMove}. Computer picked ${computerMove}.  ${result}`);
                     }
          </script>
     </body>
