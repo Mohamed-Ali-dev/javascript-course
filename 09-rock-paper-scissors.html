@@ -9,17 +9,18 @@
 
     <p>Rock Paper Scissors</p>
     <button onclick="
-
     PlayGame('Rock');
     ">Rock</button>
 
     <button onclick="
     PlayGame('Paper');
     ">Paper</button>
+
     <button onclick="
     PlayGame('Scissors');
     ">Scissors</button>
-
+  <p class="js-result"></p>
+  <p class="js-moves"></p>
   <p class="js-score"></p>
     <button onclick="
     score.wins = 0;
@@ -128,9 +129,12 @@
               }
 
              updateScoreElement();
-              alert(`You picked ${userMove}. Computer picked ${computerMove}.  ${result}
-wins: ${score.wins}, losses: ${score.losses}, ties: ${score.ties}`);
+             document.querySelector('.js-moves').innerHTML = `You picked ${userMove}. Computer picked ${computerMove}.`;
+
+             document.querySelector('.js-result').innerHTML = result;
+         
               }
+
   </script>
 
 </body>
