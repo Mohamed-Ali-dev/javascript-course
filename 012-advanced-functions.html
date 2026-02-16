@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Functions</title>
+</head>
+<body>
+    <button  class="js-button">Click</button>
+    <script>
+        /*
+        const buttonElement = document.querySelector('.js-button');
+        const eventListener = () =>{
+            console.log("Button clicked!");
+        }
+        console.log("buttonElement:", buttonElement);
+        buttonElement.addEventListener('click', eventListener);
+
+        buttonElement.removeEventListener('click', eventListener);
+            buttonElement.addEventListener('click', () =>{
+            console.log("Button clicked 2!");
+        });
+        */
+
+
+        /*
+        const function1 = function greeting(){
+            console.log("Hello from function1!");
+        }; 
+        console.log("Function1:", function1);
+        console.log("typeof function1:", typeof function1);
+        const object1 ={
+            num:2, 
+            fun: function greeting(){
+                console.log('hello there');
+            }
+        }
+        object1.fun();
+
+        function run(param){
+            param();
+        }
+        run(function() {
+            console.log("Hello from the passed function!");
+        })
+        */
+        /*
+               // A function we want to run after a delay
+       setTimeout(function(){
+        console.log("This message is shown after 2 seconds");
+    },2000
+       )
+       // setInterval example
+       setInterval(function(){
+        console.log("This message is shown every 3 seconds");
+       },3000) 
+       console.log("This message is shown immediately");
+        */
+    //    *********************************
+  /*
+      
+    [
+            'Make dinner',
+            'Clean the house',
+            'Learn JavaScript',
+        ].forEach(function(value, index){
+            console.log(index);
+
+            console.log(value);
+        });
+
+        [
+            'Make dinner',
+            'Clean the house',
+            'Learn JavaScript',
+        ].forEach((value, index) => {
+            console.log(index);
+
+            console.log(value);
+        });
+    // *******************************************
+    const regularFunction = function(){
+        console.log('Hello from regular function!');
+    }
+    const arrowFunction = (param, param2) => {
+        console.log('Hello from arrow function!');
+        return 5;
+    }
+    arrowFunction();
+    const oneParam = param => {
+        console.log(param);
+    }
+    oneParam('Hello with one param!');
+    const oneLine = () => 2+2;
+    console.log('oneLine result:', oneLine());
+    const object2 = {
+        arrowMethod: () =>{
+
+        },
+        method(){
+
+        }
+    }
+  */
+        // ************************************************
+        // .filter() .map()
+
+        //.filter() copy the array based on a condition 
+        console.log([1, -3, -5, 5].filter((value, index) =>{
+            // if (value > 0){
+            //     return true;
+            // }else{
+            //     return false;
+            // }
+            return value > 0;
+        }));
+        //.map() transfer an array to another based on the return value
+
+         console.log([1, 1, 3].map(value => {
+            return value * 10;
+        }));
+         console.log([1, 1, 3].map(value => value * 10));
+
+    </script>
+</body>
+</html>
